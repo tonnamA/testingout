@@ -11,7 +11,7 @@
   Audio Upload Management    ตรวจสอบไฟล์ รับไฟล์ และบันทึกลง Storage
   Background Worker          รับ Job และประมวลผลเสียงเบื้องหลัง
   Audio Analyze Processing   เตรียมเสียงและควบคุมขั้นตอนวิเคราะห์
-  AI Poetry Algorithm        วิเคราะห์เสียงและคำนวณคะแนน
+  Algo Poetry Algorithm      วิเคราะห์เสียงและคำนวณคะแนน
   Backend Result Handle      ตรวจสอบและจัดรูปแบบผลจาก Algorithm
   Audio Records Management   บันทึกและดึงข้อมูล Audio Record กับผลวิเคราะห์
   Dashboard Management       รวมข้อมูลและส่งข้อมูลให้ Dashboard

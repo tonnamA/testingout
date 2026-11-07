@@ -15,8 +15,8 @@
 
 `POST /api/audio/upload`
 
--   Authentication: ต้อง Login
--   Request: `multipart/form-data` พร้อมไฟล์เสียง และ `version=1.0`
+-   Request: `multipart/form-data` พร้อมไฟล์เสียง poem_id และ `version=1.0,
+-   Authentication: ต้อง Login 
 -   Backend ตรวจสอบไฟล์ บันทึกลง Audio Storage และสร้าง Audio Record กับ
     Analysis Job
 -   ส่ง Job ให้ Background Worker ประมวลผล
@@ -51,6 +51,7 @@
 -   Authentication: ต้อง Login
 -   ดึงประวัติของผู้ใช้ปัจจุบัน
 -   รองรับ Pagination
+-   เพิ่ม poem_id ใน response 
 
 ## 4. Get Audio Result
 
@@ -58,7 +59,15 @@
 
 -   Authentication: ต้อง Login และเป็นเจ้าของ Audio Record
 -   คืนข้อมูลเสียงและผลวิเคราะห์ เช่น คะแนนและ Feedback
+-   เพิ่ม poem_id ใน Response
 
+## 5. GET Dashboard response
+
+`GET /api/dashboard`
+
+- Authentication: ต้อง Login และเป็นเจ้าของ Audio Record
+- เรียกดูข้อมูล Dashbaord
+- เพิ่มข้อมูล poem_id เพื่อใช้แยกประวัติตามบทกลอน
 ## Important Rules
 
 -   ผู้ใช้ส่งเสียงเพียงครั้งเดียวผ่าน Upload API
